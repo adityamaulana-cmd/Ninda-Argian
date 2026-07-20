@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Sunda Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="audio/Rizky Febian Feat. Mahalini - Bermuara [Official Lyric Video].mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <div id="musicControl" class="music-control hidden" onclick="toggleMusic()">
+        🎵
+    </div>
+
+    <div id="gatekeeper" class="gatekeeper w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+        <div class="gatekeeper-content">
+            <p class="sunda-greeting">Tasyakur</p>
+            <h1 class="bride-names-cover">Ninda &amp; Argian</h1>
+            <p class="invitation-to">Kepada Bapak/Ibu/Saudara/i:</p>
+            <h3 class="guest-name">Tamu Undangan</h3>
+            <button class="open-btn" onclick="openInvitation()">Lihat Undangan</button>
+        </div>
+    </div>
+
+    <div id="mainContent" class="main-content hidden">
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#info">Info</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#turut">Turut Mengundang</a>
+            <a href="#gifts">Gifts</a>
+        </nav>
+
+        <section id="home" class="hero-section">
+            <div class="section-content">
+                <span>Walimatul 'Ursy</span>
+                <h1>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i ke pernikahan kami:</h1>
+                <h3>Ninda Septiani R</h3>
+                <p>Putri dari bpk.Kamaludin & ibu Karnasih</p>
+                <h4>&amp;</h4>
+                <h3>Argian Ferdiana</h3>
+                <p>Putra dari bpk.Dedi Suhendi (alm) dan ibu Atih Alpriatna</p>
+                <b class="date-hero">Rabu, 26 Agustus 2026</b>
+            </div>
+        </section>
+
+        <section id="info" class="info-section">
+            <div class="section-content">
+                <h2>Acara Pernikahan</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Akad Nikah</h3>
+                        <p class="time">Pukul 08.00 - Selesai WIB</p>
+                        <p class="location"><strong>KUA Kecamatan Langkaplancar</strong><br>Jl. Langkaplancar, Bangunjaya, Kec. Langkaplancar</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Resepsi</h3>
+                        <p class="time">Pukul 11.00 - Selesai WIB</p>
+                        <p class="location"><strong>Rumah Mempelai Wanita</strong><br>Jl. Raya Desa Pangkalan, Pangandaran</p>
+                    </div>
+                </div>
+
+                <div class="maps-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.4610864033207!2d108.3633229!3d-7.524580799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e65f300138b0f99%3A0xfd0676712c0d8a5c!2sPOM%20MINI%20WA%20KAMAL!5e0!3m2!1sid!2sid!4v1783014290640!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <p class="maps-text">Klik tombol di bawah ini untuk melihat detail lokasi acara melalui Google Maps:</p>
+                    <a href="https://maps.app.goo.gl/f4e1Ljccd1Nwkeun6" target="_blank" class="maps-btn">
+                        📍 Buka Lokasi (Google Maps)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="gallery-grid">
+                <h2>Gallery</h3>
+                    <p>Kebahagiaan Kami</p>
+                <img src="img/Gallery/1.png" alt="Foto Prewedding 1">
+                <img src="img/Gallery/2.png" alt="Foto Prewedding 2">
+                <img src="img/Gallery/3.png" alt="Foto Prewedding 3">
+            </div>
+        </section>
+
+
+        <section id="turut" class="turut-section">
+            <div class="section-content">
+                <h2>Turut Mengundang</h2>
+                <ul class="turut-list">
+                    <li>Kel. Bapak Dedi Suhendi (Alm) &amp; Ibu Atih Alpriatna (Orang Tua Pria)</li>
+                    <li>Kel. Bapak Kamaludin &amp; Ibu Karnasih (Orang Tua Wanita)</li>
+                    <li>Ibu Dadah Jubaedah S.Pd.MM. (Kepala MAN2 Pangandaran)</li>
+                    <li>H. Adang Sugilar (pun rai)</li>
+                    <li>Ust. Basor Ruspendi S.Pd</li>
+                    <li>Bpk. Acep Deni Firdaus (Camat Kecamatan Langkaplancar)/li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="gifts" class="gifts-section">
+            <div class="section-content">
+                <h2>Kado Digital</h2>
+                <p>Doa restu Anda adalah karunia terindah, namun jika ingin memberikan tanda kasih secara digital, Anda dapat melalui rekening berikut:</p>
+                <div class="gift-cards">
+                    <div class="bank-card">
+                        <h4>SeaBank</h4>
+                        <p class="account-number">901971956965</p>
+                        <p class="account-name">a.n. Argian Ferdiana</p>
+                    </div>
+                    <div class="bank-card">
+                        <h4>SeaBank</h4>
+                        <p class="account-number">901951111905</p>
+                        <p class="account-name">a.n. Ninda Septiani Rahayu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Sampai Jumpa di Hari Bahagia Kami.</p>
+            <p class="copyright">&copy; 2026 Ninda &amp; Argian. All Rights Reserved.</p>
+            <p class="block">Design by <a href="https://instagram.com/aa_ditt12">@aa_ditt12</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

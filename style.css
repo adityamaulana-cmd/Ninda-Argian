@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --sage-green: #879883;
+    --light-sage: #b3c2b1;
+    --dark-sage: #566753;
+    --cream: #f4f6f0;
+    --gold: #c5a880;
+    --charcoal: #2d332c;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    overflow-x: hidden;
+}
+
+h1, h3, .couple-title {
+    font-family: 'Playfair Display', serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.gatekeeper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/Desain\ tanpa\ judul.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-align: center;
+    color: var(--cream);
+    padding: 20px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.sunda-greeting {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: var(--gold);
+    margin-bottom: 10px;
+    text-shadow: (--gold);
+}
+
+.bride-names-cover {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: #2d332c;
+}
+
+.invitation-to {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    text-shadow: shadow;
+}
+
+.guest-name {
+    font-size: 1.5rem;
+    margin: 10px 0 30px 0;
+    color: var(--gold);
+}
+
+.open-btn {
+    background-color: var(--gold);
+    color: var(--charcoal);
+    border: none;
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.open-btn:hover {
+    transform: scale(1.05);
+    background-color: var(--cream);
+}
+
+.music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-size: 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(135, 152, 131, 0.95);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    z-index: 900;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: var(--cream);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--gold);
+}
+
+section {
+    padding: 100px 20px 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+section h2 {
+    font-size: 2.8rem;
+    color: var(--dark-sage);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.hero-section h4 {
+    font-size: 5rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.hero-section h3 {
+    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+
+.hero-section {
+    color: var(--cream);
+    background-image: linear-gradient(rgba(135, 152, 131, 0.4), rgba(135, 152, 131, 0.4)), url(img/Desain\ tanpa\ judul.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero-section h1 {
+    color: #f4f6f0;
+    padding-top: 0.8rem;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-section p {
+    padding-bottom: 2rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.hero-section span {
+    font-weight: bold;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.couple-title {
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.date-hero {
+    letter-spacing: 2px;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.info-section {
+    background-color: var(--cream);
+}
+
+.info-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    box-shadow: 0 10px 30px rgba(86, 103, 83, 0.1);
+    border: 1px solid var(--light-sage);
+}
+
+.info-card h3 {
+    color: var(--gold);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.info-card .time {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.info-card .location {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.maps-container {
+    margin-top: 40px;
+}
+
+.maps-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.maps-btn {
+    display: inline-block;
+    background-color: var(--dark-sage);
+    color: var(--cream);
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(86, 103, 83, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.maps-btn:hover {
+    background-color: var(--sage-green);
+    transform: translateY(-2px);
+}
+
+.gallery h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--cream);
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.gallery p {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--cream);
+    font-size: 3rem;
+}
+
+.gallery {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--dark-sage);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section-content h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.turut-section {
+    background-color: var(--cream);
+    padding-top: 0.1rem;
+    padding-bottom: 7rem;
+}
+
+.turut-list {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    padding-top: 0.1rem;
+}
+
+.turut-list li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px dashed var(--light-sage);
+}
+
+.gifts-section {
+    background-color: var(--dark-sage);
+    color: var(--cream);
+}
+
+.gifts-section h2 {
+    color: var(--cream);
+    padding-top: 0rem;
+    padding-bottom: 0.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gifts-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.gift-cards {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bank-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--gold);
+    padding: 30px;
+    border-radius: 15px;
+    min-width: 250px;
+}
+
+.bank-card h4 {
+    font-size: 1.3rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.account-number {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #000;
+    color: var(--cream);
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.footer .copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    margin-top: 7px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .navbar a {
+        margin: 0 8px;
+        font-size: 0.7rem;
+    }
+    .bride-names-cover {
+        font-size: 2.5rem;
+    }
+    .couple-title {
+        font-size: 2.8rem;
+    }
+}
+
+
+/* Media Query */
+/* laptop */
+@media (max-width: 992px){
+   html {
+    font-size: 75%;
+   } 
+}
+
+
+/* Tablet */
+@media (max-width: 768px){
+    html {
+        font-size: 65%;
+   } 
+   
+.sticky-top {
+    overflow: hidden;
+}
+
+.mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+}
+}
+
+
+/* Mobile Phone */
+@media (max-width: 648px){
+    html {
+        font-size: 80%;
+    } 
+
+
+    
+    .mynavbar .nav-link {
+    font-size:80%;
+    text-align: center;
+   }
+}
